@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .comman {
+            width: 150px;
+            height: 150px;
+            background-color: cadetblue;
+            border-radius: 50%;
+            display: inline-block;
+            animation-name: ball;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes ball {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                background-color: black;
+            }
+
+            100% {
+                transform: translateY(500px);
+            }
+        }
+
+        .b1 {
+            animation-delay: 0s;
+        }
+
+        .b2 {
+            background-color: chocolate;
+            animation-delay: 0.2s;
+        }
+
+        .b3 {
+            background-color: crimson;
+            animation-delay: 0.4s;
+        }
+
+        .b4 {
+            background-color: darkblue;
+            animation-delay: 0.6s;
+        }
+
+        .b5 {
+            background-color: darkorange;
+            animation-delay: 0.8s;
+        }
+
+        .b6 {
+            background-color: deepskyblue;
+            animation-delay: 1s;
+        }
+
+        .b7 {
+            background-color: darkred;
+            animation-delay: 1.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="comman b1"></div>
+    <div class="comman b2"></div>
+    <div class="comman b3"></div>
+    <div class="comman b4"></div>
+    <div class="comman b5"></div>
+    <div class="comman b6"></div>
+    <div class="comman b7"></div>
+</body>
+
+</html>
